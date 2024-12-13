@@ -64,12 +64,11 @@
       }
 
       .image {
-        .card-image {
+        img {
           border-radius: 0.625rem;
           max-width: 336px;
           max-height: 200px;
         }
-
       }
 
       .card-content {
@@ -79,8 +78,8 @@
           width: fit-content;
           padding: .25rem .75rem .25rem .75rem;
           background: hsl(47, 88%, 63%);
-          margin-bottom: .75rem;
           border-radius: .25rem;
+          font-size: 14px;
         }
 
         .publish-date {
@@ -113,6 +112,10 @@
         padding-bottom: 1.25rem;
       }
 
+      .spacing-12px {
+        margin-bottom: .75rem;
+      }
+
       .extra-bold {
         font-family: 'figtree-extra-bold', sans-serif;
       }
@@ -140,9 +143,9 @@
           <img class="card-image" src="./assets/images/illustration-article.svg" alt="illustration-article">
         </div>
         <div class="card-content">
-          <div class="type extra-bold">Learning</div>
-          <div class="publish-date spacing bold">Published 21 Dec 2023</div>
-          <h2 class="title spacing extra-bold link">HTML & CSS foundations</h2>
+          <div class="type extra-bold spacing-12px">Learning</div>
+          <div class="publish-date spacing-12px bold">Published 21 Dec 2023</div>
+          <h2 class="title spacing-12px extra-bold link">HTML & CSS foundations</h2>
           <div class="description">These languages are the backbone of every website, defining structure, content,
             and
             presentation.</div>
