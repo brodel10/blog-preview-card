@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Blog preview card</title>
+
+  <style>
+    @font-face {
+      font-family: "figtree-regular";
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "figtree-extra-bold";
+      src: url("assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "figtree-bold";
+      src: url("assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    body {
+      font-family: 'figtree-regular', sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: hsl(47, 88%, 63%);
+
+      .card {
+        max-height: 522px;
+        max-width: 384px;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 1.25rem;
+        border: 1.5px solid;
+        box-shadow: 8px 8px black;
+      }
+
+      .image {
+        .card-image {
+          border-radius: 0.625rem;
+          max-width: 336px;
+          max-height: 200px;
+        }
+
+      }
+
+      .card-content {
+        padding: 1.25rem 0 1.25rem 0;
+
+        .type {
+          width: fit-content;
+          padding: .25rem .75rem .25rem .75rem;
+          background: hsl(47, 88%, 63%);
+          margin-bottom: .75rem;
+          border-radius: .25rem;
+        }
+
+        .publish-date {
+          font-size: 14px;
+        }
+
+        .description {
+          color: hsl(0, 0%, 42%);
+        }
+
+
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+
+        .name {
+          font-size: 14px;
+          margin-left: 0.75rem;
+        }
+
+        .avatar {
+          max-width: 32px;
+          max-height: 32px;
+        }
+      }
+
+      .spacing {
+        padding-bottom: 1.25rem;
+      }
+
+      .extra-bold {
+        font-family: 'figtree-extra-bold', sans-serif;
+      }
+
+      .bold {
+        font-family: 'figtree-bold', sans-serif;
+      }
+
+      .link:hover,
+      .link:active {
+        cursor: pointer;
+        color: hsl(47, 88%, 63%)
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img class="card-image" src="./assets/images/illustration-article.svg" alt="illustration-article">
+        </div>
+        <div class="card-content">
+          <div class="type extra-bold">Learning</div>
+          <div class="publish-date spacing bold">Published 21 Dec 2023</div>
+          <h2 class="title spacing extra-bold link">HTML & CSS foundations</h2>
+          <div class="description">These languages are the backbone of every website, defining structure, content,
+            and
+            presentation.</div>
+
+        </div>
+        <div class="user">
+          <img class="avatar link" src="./assets/images/image-avatar.webp" alt="image-avatar">
+          <div class="name extra-bold link">Greg Hooper</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
